@@ -4,7 +4,7 @@ var jsonDiff = require('./jsondiff');
 var totalObjectKeys = require('./totalObjectKeys');
 
 var expectedJSON = require('./ExpectedJSON/worldDevIndicatorUrbanization1.json');
-var actualJSON = require('../outputdata/worldDevolopmentVijay.json');
+var actualJSON = require('../outputdata/indiaCensusPradheep.json');
 
 describe('Test Application as Blackbox', function(){
   it ('Test JSON is well formed', function(done){

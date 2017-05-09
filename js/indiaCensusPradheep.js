@@ -4,6 +4,7 @@ module.exports = function convert(startYear)
   {
        throw new Error('Not a number');
   }
+
   const readline = require('readline');
   const fs = require('fs');
 

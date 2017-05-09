@@ -17,7 +17,7 @@ module.exports = function convert(startYear)
   let js;
 const rl = readline.createInterface({
 // reading the final.csv file
-input: fs.createReadStream('../inputdata/final.csv')
+input: fs.createReadStream('../final.csv')
 });
 // reading line by line
 rl.on('line', (line) => {

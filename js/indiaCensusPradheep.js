@@ -7,7 +7,8 @@ module.exports = function convert(startYear)
 
   const readline = require('readline');
   const fs = require('fs');
-
+  let log4js = require('log4js');
+  let logger = log4js.getLogger();
   let data = [];
   let i = 0;
   let a = [];
@@ -37,7 +38,9 @@ rl.on('line', (line) => {
             a.push({agegroup: data[ageGroup], literateperson: data[literatePerson]});
           }
           js = JSON.stringify(a);
+
           fs.writeFile('../outputdata/indiaCensusPradheep.json', js);
+          logger.debug("File is written in json format");   
       });
     return 'JSON written successfully';
 };
